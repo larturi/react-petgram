@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 
 import React from 'react'
-import { Category } from '../category'
+import { Category } from '../Category'
 import { categories } from '../../../api/db.json'
 import { List, Item } from './styles'
 

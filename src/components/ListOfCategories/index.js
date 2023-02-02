@@ -5,21 +5,29 @@ import { getApiBaseUrl } from '../../hooks/useConfig'
 import { Category } from '../Category'
 import { List, Item } from './styles'
 
-export const ListOfCategories = () => {
+function useCategoriesData () {
   const [categories, setCategories] = useState([])
-  const [showFixed, setShowFixed] = useState(false)
-
+  const [loading, setLoading] = useState(false)
   const urlApi = getApiBaseUrl()
 
   useEffect(() => {
+    setLoading(true)
     const fetchCategories = async () => {
       const response = await window.fetch(`${urlApi}/categories`)
       const data = await response.json()
       setCategories(data)
+      setLoading(false)
     }
 
     fetchCategories()
   }, [])
+
+  return { categories, loading }
+}
+
+export const ListOfCategories = () => {
+  const [showFixed, setShowFixed] = useState(false)
+  const { categories, loading } = useCategoriesData()
 
   useEffect(function () {
     const onScroll = e => {
@@ -33,14 +41,12 @@ export const ListOfCategories = () => {
   }, [showFixed])
 
   const renderList = (fixed) => (
-    <List className={fixed ? 'fixed' : ''}>
+    <List fixed={fixed}>
       {
-        categories.map(category => (
-          <Item key={category.id}>
-            <Category {...category} />
-          </Item>
-        ))
-    }
+        loading
+          ? null
+          : categories.map(category => <Item key={category.id}><Category {...category} /></Item>)
+      }
     </List>
   )
 

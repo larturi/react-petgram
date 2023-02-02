@@ -1,21 +1,44 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { MdFavoriteBorder } from 'react-icons/md'
-import { Button, ImgWrapper, Img } from './styles'
+import { Button, ImgWrapper, Img, Article } from './styles'
 
 const DEFAULT_IMAGE = 'https://res.cloudinary.com/midudev/image/upload/w_300/q_80/v1560262103/dogs.png'
 
 export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
-  return (
-    <article>
-      <a href={`/detail/${id}`}>
-        <ImgWrapper>
-          <Img src={src} alt='Imagen' />
-        </ImgWrapper>
-      </a>
+  const element = useRef(null)
 
-      <Button>
-        <MdFavoriteBorder size='32px' />{likes} likes!
-      </Button>
-    </article>
+  const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(function (entries) {
+      const { isIntersecting } = entries[0]
+      if (isIntersecting) {
+        console.log('Si')
+        setShow(true)
+        observer.disconnect()
+      }
+    })
+    observer.observe(element.current)
+  }, [element])
+
+  return (
+    <Article ref={element}>
+      {
+      show && (
+        <>
+          <a href={`/detail/${id}`}>
+            <ImgWrapper>
+              <Img src={src} alt='Imagen' />
+            </ImgWrapper>
+          </a>
+
+          <Button>
+            <MdFavoriteBorder size='32px' />{likes} likes!
+          </Button>
+        </>
+      )
+    }
+
+    </Article>
   )
 }

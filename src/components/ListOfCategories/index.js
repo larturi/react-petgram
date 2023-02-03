@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 
 import React, { useState, useEffect } from 'react'
-import { getApiBaseUrl } from '../../hooks/useConfig'
+import { getApiBaseUrl } from '../../hooks'
 import { Category } from '../Category'
 import { List, Item } from './styles'
 

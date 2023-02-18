@@ -1,7 +1,7 @@
 import React from 'react'
 import { ListOfCategories } from './components/ListOfCategories'
-import { ListOfPhotoCards } from './components/ListOfPhotoCards'
 import { Logo } from './components/Logo'
+import { ListOfPhotoCardsWithQuery } from './containers/ListOfPhotoCardsWithQuery'
 import { PhotoCardWithQuery } from './containers/PhotoCardWithQuery'
 import { GlobalStyles } from './GlobalStyles'
 
@@ -20,7 +20,7 @@ export const App = () => {
           : (
             <>
               <ListOfCategories />
-              <ListOfPhotoCards categoryId={3} />
+              <ListOfPhotoCardsWithQuery categoryId={3} />
             </>
             )
       }

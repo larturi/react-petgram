@@ -20,7 +20,7 @@ export const ListOfPhotoCards = ({ categoryId }) => {
   if (loading) return 'Loading...'
   if (error) return <pre>{error.message}</pre>
   return (
-    <ul>
+    <ul style={{ padding: '12px' }}>
       {data.photos.map(photo => <PhotoCard key={photo.id} {...photo} />)}
     </ul>
   )

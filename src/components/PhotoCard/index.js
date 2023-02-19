@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@reach/router'
 import { useLocalStorage, useNearScreen } from '../../hooks'
 import { useMuationToogleLike } from '../../hooks/useMuationToogleLike'
 import { FavButton } from '../FavButton'
@@ -27,11 +28,11 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
       {
       show && (
         <>
-          <a href={`/?detail=${id}`}>
+          <Link to={`/detail/${id}`}>
             <ImgWrapper>
               <Img src={src} alt='Imagen' />
             </ImgWrapper>
-          </a>
+          </Link>
 
           <FavButton likes={likes} liked={liked} onClick={handleFavClick} />
         </>

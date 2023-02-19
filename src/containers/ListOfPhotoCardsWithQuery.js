@@ -26,6 +26,6 @@ export const ListOfPhotoCardsWithQuery = ({ categoryId }) => {
   if (loading) return <p>Loading...</p>
 
   return (
-    <ListOfPhotoCards {...data.photos} />
+    <ListOfPhotoCards photos={data.photos} />
   )
 }

@@ -1,0 +1,5 @@
+export { Detail } from './Detail'
+export { Favs } from './Favs'
+export { Home } from './Home'
+export { NotRegisteredUser } from './NotRegisteredUser'
+export { User } from './User'

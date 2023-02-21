@@ -29,4 +29,11 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     padding-bottom: 10px;
   }
+
+  .link-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 5px;
+  }
 `

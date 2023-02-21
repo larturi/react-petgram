@@ -3,7 +3,7 @@ import { Router } from '@reach/router'
 import { Logo } from './components/Logo'
 import { Nabvar } from './components/Navbar'
 import { GlobalStyles } from './GlobalStyles'
-import { Favs, User, Detail, Home, NotRegisteredUser } from './pages'
+import { Favs, User, Detail, Home, LoginUser, RegisterUser } from './pages'
 import Context from './Context'
 
 export const App = () => {
@@ -30,8 +30,12 @@ export const App = () => {
                 )
               : (
                 <Router>
-                  <NotRegisteredUser path='/favs' />
-                  <NotRegisteredUser path='/user' />
+                  <LoginUser path='/favs' />
+                  <LoginUser path='/user' />
+                  <LoginUser path='/login' />
+                  <RegisterUser path='/favs' />
+                  <RegisterUser path='/user' />
+                  <RegisterUser path='/register' />
                 </Router>
                 )
         }

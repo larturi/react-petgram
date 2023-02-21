@@ -21,6 +21,34 @@
       ],
       "avatar": "https://gravatar.com/avatar/3bccd59be0a57b39bdd9b2760702795e",
       "email": "dani@gmail.com"
+    },
+    {
+      "id": "439d1680-b1ec-11ed-8a3f-93b357c3c7c7",
+      "password": "$2b$10$Xh54Fktad.0J7CHhx93oFeIQ1LK4mfQf/IoRYaugkGtvyAkTr2mVi",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/9818bf19591ac0d0d9f3b9ae73c23a1a",
+      "email": "lala@lala.com"
+    },
+    {
+      "id": "aef34490-b1ec-11ed-8a3f-93b357c3c7c7",
+      "password": "$2b$10$gJ330r4GfeOwHL1gJ2KhdeZVkWw0YLCySrMr691g7x2L1aZIJuqmq",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/41f6da31df05e0186754f4f3943371f1",
+      "email": "lea@mail.com"
+    },
+    {
+      "id": "40789310-b1ee-11ed-8a3f-93b357c3c7c7",
+      "password": "$2b$10$0.Xbk0KvexIc9oU2EBWo/eBoDNYJl5AblY9QnYr0N/UXkG3OS06Eq",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/63a9f0ea7bb98050796b649e85481845",
+      "email": "root"
+    },
+    {
+      "id": "48119cc0-b1ee-11ed-8a3f-93b357c3c7c7",
+      "password": "$2b$10$yw8dY6ivyEj2gqonFrHK1eCq95thVz2GZoycUX.NhaNVgxH.pNcfS",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/926e27eecdbc7a18858b3798ba99bddd",
+      "email": "pepe"
     }
   ],
   "categories": [

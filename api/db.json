@@ -49,6 +49,13 @@
       "favs": [],
       "avatar": "https://gravatar.com/avatar/926e27eecdbc7a18858b3798ba99bddd",
       "email": "pepe"
+    },
+    {
+      "id": "45360930-b1f0-11ed-8a3f-93b357c3c7c7",
+      "password": "$2b$10$DQGupZnerdHLNIYOKEPeye8qpSWg8jahVQ7X1loDpaTzy74O3Tof2",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/1af38fabd3daf4b382f88e9f66fcd6ca",
+      "email": "lea22@mail.com"
     }
   ],
   "categories": [

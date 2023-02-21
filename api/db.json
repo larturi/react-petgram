@@ -53,7 +53,13 @@
     {
       "id": "45360930-b1f0-11ed-8a3f-93b357c3c7c7",
       "password": "$2b$10$DQGupZnerdHLNIYOKEPeye8qpSWg8jahVQ7X1loDpaTzy74O3Tof2",
-      "favs": [],
+      "favs": [
+        "16",
+        "12",
+        "2",
+        "9",
+        "15"
+      ],
       "avatar": "https://gravatar.com/avatar/1af38fabd3daf4b382f88e9f66fcd6ca",
       "email": "lea22@mail.com"
     }
@@ -122,7 +128,7 @@
       "categoryId": 4,
       "src": "https://images.unsplash.com/photo-1520561805070-83c413349512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "userId": 1,
-      "likes": 1
+      "likes": 2
     },
     {
       "id": 18,
@@ -136,7 +142,7 @@
       "categoryId": 4,
       "src": "https://images.unsplash.com/photo-1452857297128-d9c29adba80b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "userId": 1,
-      "likes": 2
+      "likes": 3
     },
     {
       "id": 7,
@@ -150,7 +156,7 @@
       "categoryId": 3,
       "src": "https://images.unsplash.com/photo-1553987882-91d92995e16c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "userId": 3,
-      "likes": 6
+      "likes": 7
     },
     {
       "id": 13,
@@ -178,14 +184,14 @@
       "categoryId": 1,
       "src": "https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "userId": 1,
-      "likes": 3
+      "likes": 4
     },
     {
       "id": 9,
       "categoryId": 2,
       "src": "https://images.unsplash.com/photo-1518155317743-a8ff43ea6a5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "userId": 1,
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 8,

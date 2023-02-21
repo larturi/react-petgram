@@ -40,7 +40,6 @@ const typeDefs = gql`
 
   input LikePhoto {
     id: ID!
-    increment: Boolean!
   }
 
   input UserCredentials {
@@ -81,17 +80,13 @@ const resolvers = {
   Mutation: {
     likeAnonymousPhoto: (_, { input }) => {
       // find the photo by id and throw an error if it doesn't exist
-      const { id: photoId, increment } = input
+      const { id: photoId } = input
       const photo = photosModel.find({ id: photoId })
       if (!photo) {
         throw new Error(`Couldn't find photo with id ${photoId}`)
       }
       // put a like to the photo
-      if (increment) {
-        photosModel.addLike({ id: photoId })
-      } else {
-        photosModel.removeLike({ id: photoId })
-      }
+      photosModel.addLike({ id: photoId })
       // get the updated photos model
       const actualPhoto = photosModel.find({ id: photoId })
       return actualPhoto

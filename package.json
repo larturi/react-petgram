@@ -8,6 +8,7 @@
     },
     "scripts": {
         "build": "webpack",
+        "serve:dev": "webpack --mode development && npx serve dist -s",
         "vecel-build": "npm run build",
         "lint": "standard",
         "lint-fix": "standard --fix",

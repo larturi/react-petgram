@@ -3,7 +3,7 @@ import { Layout } from '../components/Layout'
 import { ListOfCategories } from '../components/ListOfCategories'
 import { ListOfPhotoCardsWithQuery } from '../containers/ListOfPhotoCardsWithQuery'
 
-export const Home = ({ categoryId }) => {
+const HomePage = ({ categoryId }) => {
   return (
     <>
       <Layout title='Petgram: Tu App de fotos de mascotas' subtitle='En Petgram puedes encontrar fotos de animales y subir las fotos de tus mascotas' hideTitle>
@@ -13,3 +13,7 @@ export const Home = ({ categoryId }) => {
     </>
   )
 }
+
+export const Home = React.memo(HomePage, (prevProps, props) => {
+  return prevProps.categoryId === props.categoryId
+})

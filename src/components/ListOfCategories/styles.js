@@ -14,12 +14,13 @@ export const List = styled.ul`
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     left: 0;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 470px;
     position: fixed;
     right: 0;
     top: -20px;
     transform: scale(.5);
     z-index: 1;
+    padding: 30px 10px 7px;
   }
   `}
 `

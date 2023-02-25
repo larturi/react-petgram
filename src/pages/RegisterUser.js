@@ -4,7 +4,7 @@ import { UserForm } from '../components/UserForm'
 import Context from '../Context'
 import { useRegisterMutation } from '../containers/RegisterMutation'
 
-export const RegisterUser = () => {
+export default () => {
   const { registerMutation, loading: loadingRegister, error: errorRegister } = useRegisterMutation()
   return (
     <Context.Consumer>

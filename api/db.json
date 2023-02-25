@@ -56,8 +56,9 @@
       "favs": [
         "12",
         "2",
-        "0",
-        "7"
+        "7",
+        "18",
+        "0"
       ],
       "avatar": "https://gravatar.com/avatar/1af38fabd3daf4b382f88e9f66fcd6ca",
       "email": "lea22@mail.com"
@@ -134,7 +135,7 @@
       "categoryId": 5,
       "src": "https://images.unsplash.com/photo-1518001589401-1743b61d1def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "userId": 2,
-      "likes": 16
+      "likes": 17
     },
     {
       "id": 16,

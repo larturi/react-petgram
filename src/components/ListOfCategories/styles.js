@@ -4,6 +4,9 @@ export const List = styled.ul`
   display: flex;
   overflow: scroll;
   width: 100%;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
   ${props => props.fixed && css`
   {
     background: #fff;

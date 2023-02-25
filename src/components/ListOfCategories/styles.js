@@ -15,7 +15,6 @@ export const List = styled.ul`
     left: 0;
     margin: 0 auto;
     max-width: 400px;
-    padding: 5px;
     position: fixed;
     right: 0;
     top: -20px;

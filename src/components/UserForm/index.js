@@ -17,7 +17,7 @@ export const UserForm = ({ onSubmit, title, error, disabled }) => {
 
   return (
     <div style={{ padding: '20px' }}>
-      <Title>{title}</Title>
+      <Title className='title'>{title}</Title>
 
       <Form onSubmit={handleSubmit} disabled={disabled}>
         <Input placeholder='Email' disabled={disabled} type='text' {...email} />

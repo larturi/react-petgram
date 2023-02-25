@@ -3,7 +3,7 @@ import { PhotoCard } from '../PhotoCard'
 
 export const ListOfPhotoCards = ({ photos }) => {
   return (
-    <ul style={{ padding: '12px' }}>
+    <ul>
       {photos.map(photo => <PhotoCard key={photo.id} {...photo} />)}
     </ul>
   )

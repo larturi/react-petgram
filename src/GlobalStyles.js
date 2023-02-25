@@ -39,7 +39,6 @@ export const GlobalStyles = createGlobalStyle`
 
   .title {
     font-size: 26px;
-    margin-left: 19px;
     color: #777777;
   }
 `

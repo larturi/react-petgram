@@ -1,32 +1,43 @@
-# Petgram
+# Petgram: Node | GraphQL | React
 
-### React App
+- Node
+- GraphQL
+- React
+- Webpack
+- Apollo
+- Reach Router
+- PropTypes
+- Helmet SEO
+- Styled Components
 
-## 🚀 Back
+<br />
+
+# Backend
 
 Run the development server:
 
 ```bash
 cd api
+
 npm install
-```
 
-```bash
 npm run dev:api
-
-Listening at http://localhost:3500/graphql
 ```
 
-## 🚀 Front
+Listening at <http://localhost:3500/graphql>
+
+<br />
+
+# Frontend
 
 Run the development app:
 
 ```bash
 npm install
-```
 
-```bash
 npm run dev
 ```
+
+<br />
 
 ##### Made with ❤️ by Leandro Arturi

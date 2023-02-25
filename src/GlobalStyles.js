@@ -36,4 +36,10 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     gap: 5px;
   }
+
+  .title {
+    font-size: 26px;
+    margin-left: 19px;
+    color: #777777;
+  }
 `

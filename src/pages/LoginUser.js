@@ -13,7 +13,10 @@ export const LoginUser = () => {
     const variables = { input }
     login({ variables }).then(({ data }) => {
       const { login } = data
-      activateAuth(login)
+      const user = {
+        email
+      }
+      activateAuth(login, user)
     })
   }
 

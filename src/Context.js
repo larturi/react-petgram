@@ -6,11 +6,24 @@ const Provider = ({ children }) => {
     return window.sessionStorage.getItem('token')
   })
 
+  const [activeUser, setActiveUser] = useState(() => {
+    return JSON.parse(window.sessionStorage.getItem('user'))
+  })
+
   const value = {
     isAuth,
-    activateAuth: (token) => {
+    activeUser,
+    activateAuth: (token, user) => {
       setIsAuth(true)
+      setActiveUser(user)
       window.sessionStorage.setItem('token', token)
+      window.sessionStorage.setItem('user', JSON.stringify(user))
+    },
+    removeAuth: () => {
+      setIsAuth(false)
+      setActiveUser(null)
+      window.sessionStorage.removeItem('token')
+      window.sessionStorage.removeItem('user')
     }
   }
 
